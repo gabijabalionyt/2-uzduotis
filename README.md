@@ -36,19 +36,12 @@ Programoje naudojamos funkcijos perkeltos į atskirą funkcijų failą pavadinim
 
 ***try
 {
-
   if (!ReadFile.good())
-  
-      throw "Toks failas neegzistuoja.";
-      
+      throw "Toks failas neegzistuoja."; 
 }
-
 catch (const char *Message)
-
 {
-
       cout << Message << endl;
-      
 }***
 
 
