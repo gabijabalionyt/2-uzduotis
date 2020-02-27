@@ -1,31 +1,5 @@
-#include <iostream>
-#include <string>
-#include <string.h>
-#include <algorithm>
-#include <time.h>
-#include <cmath>
-#include <stdio.h>
-#include <vector>
-#include <fstream>
-#include <sstream>
+#include "biblioteka.h"
 
-using std::cout;
-using std::cin;
-using std::endl;
-using std::string;
-using std::vector;
-using std::ifstream;
-using std::stoi;
-using std::getline;
-using std::istringstream;
-using std::swap;
-using std::all_of;
-
-struct Student
-{
-    string vardas, pavarde;
-    double gv,gm;   //galutinis pazymys su vidurkiu ir su mediana
-};
 double Vidurkis (vector<int> Grade, int n)
 {
     int Sum = 0;
@@ -100,7 +74,7 @@ void Rasymas (int Nr, vector<Student> S, int var)
 
     NewLine();
     printf("%*s", -var_il, "Vardas");
-    printf("%*s", -var_il, "Pavardë");
+    printf("%*s", -var_il, "Pavarde");
 
     int ilgis = 20;
     if (var == 1)
@@ -153,8 +127,6 @@ void Rikiavimas (vector<Student> S, int Nr) //rikiavimas
     Rasymas (Nr, S, 3);
 }
 //-----------------------------
-
-const string Error = "Jusu ivesti duomenys neatitinka reikalavimu. Bandykite dar karta.";
 
 
 void versija1 (vector <Student> &S )
@@ -353,7 +325,15 @@ void versija2 (vector <Student> &S)
                 Pav, Entry;
         int  Nr = -1;
         ifstream ReadFile ("kursiokai.txt");
-        if (ReadFile.good())
+         try
+        {
+            if (!ReadFile.good())
+                throw "Toks failas neegzistuoja.";
+        }
+        catch(const char *Message)
+        {
+            cout << Message << endl;
+        }
         {
             while (getline (ReadFile, EntryLine))
             {
@@ -406,14 +386,10 @@ void versija2 (vector <Student> &S)
             else
             {
                 NewLine();
-                cout << "Failas yra tuščias arba duomenys suvesti netinkamai, bandykite dar karta." << endl;
+                cout << "Failas yra tuscias arba duomenys suvesti netinkamai, bandykite dar karta." << endl;
             }
         }
-        else
-        {
-            NewLine();
-            cout << "Toks failas neegzistuoja." << endl;
-        }
+
         ReadFile.end;
     }
 }
@@ -441,15 +417,3 @@ label:
     }
     return var;
 }
-int main ()
-
-{
-    srand (time(NULL));
-    vector <Student> S;
-    if(pasirinkimas()==1)
-        versija1(S);
-    else
-        versija2 (S);
-    return 0;
-}
-
