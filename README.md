@@ -21,12 +21,8 @@ Nuo V0.4 yra galimybė generuoti atsitiktinius failus ir yra skaičiuojamas prog
 
 ## [Versija V0.2](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.2)
 
-Šioje programos versijoje tęsiama programos realizacija, kurioje buvo naudojamas std::vector tipo konteineris. Vartotojas pasirenka kokius duomenis naudoti - įvestus paties/pačios ar nuskaitytus iš tekstinio duomenų failo pavadinimu kursiokai.txt, kurio struktūra atrodo taip:
+Šioje programos versijoje tęsiama programos realizacija, kurioje buvo naudojamas std::vector tipo konteineris. Vartotojas pasirenka kokius duomenis naudoti - įvestus paties/pačios ar nuskaitytus iš tekstinio duomenų failo pavadinimu kursiokai.txt.
 
-Vardas      Pavardė      ND1 ND2 ND3 ND4 ... NDn Egzaminas
-Vardas1     Pavardė1     1   2   3   4       10  5
-Vardas2     Pavardė2     2   3   4   5       5   10
-...
 Išvedant duomenis studentai išrikiuojami alfabetiškai pagal vardus.
 
 ## [Versija V0.3](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.3)
@@ -50,12 +46,9 @@ Išvedant duomenis studentai rikiuojami alfabetiškai, tik šįkart pagal studen
 
 ## [Versija V0.4](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.4)
 
-Šioje programos realizacijoje pridėta galimybė sugeneruoti penkis skirtingo dyžio failus, kuriuose studentų vardai ir pavardės pateikiami šabloniškai, o namų darbai bei jų kiekis sugeneruojami atsitiktinai. Sugeneruoti duomenų failai atrodo taip:
+Šioje programos realizacijoje pridėta galimybė sugeneruoti penkis skirtingo dyžio failus, kuriuose studentų vardai ir pavardės pateikiami šabloniškai, o namų darbai bei jų kiekis sugeneruojami atsitiktinai. 
 
-Vardas      Pavardė      ND1 ND2 ND3 ND4 ... NDn Egzaminas
-Vardas1     Pavardė1     1   2   3   4       10  5
-Vardas2     Pavardė2     2   3   4   5       5   10
-...
+
 Studentai, kurių galutinis balas mažesnis nei 5.0, įrašomi į Protingi.txt failą, egzaminą išlaikiusieji (gavę 5.0 ar daugiau) - į Kvaili.txt.
 
 Atlikus spartos analizę, gaunami į apačioje pateiktą pavyzdį panašūs reluztatai:
