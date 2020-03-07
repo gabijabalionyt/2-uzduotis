@@ -52,12 +52,9 @@ Išvedant duomenis studentai rikiuojami alfabetiškai, tik šįkart pagal studen
 
 Šioje programos realizacijoje pridėta galimybė sugeneruoti penkis skirtingo dyžio failus, kuriuose studentų vardai ir pavardės pateikiami šabloniškai, o namų darbai bei jų kiekis sugeneruojami atsitiktinai. Sugeneruoti duomenų failai atrodo taip:
 
-Vardas      Pavardė      Egzaminas ND1 ND2 ND3 ND4 ... NDn
-
-Vardas1     Pavardė1     5         1   2   3   4       10
-
-Vardas2     Pavardė2     10        2   3   4   5       5
-
+Vardas      Pavardė      ND1 ND2 ND3 ND4 ... NDn Egzaminas
+Vardas1     Pavardė1     1   2   3   4       10  5
+Vardas2     Pavardė2     2   3   4   5       5   10
 ...
 Studentai, kurių galutinis balas mažesnis nei 5.0, įrašomi į Protingi.txt failą, egzaminą išlaikiusieji (gavę 5.0 ar daugiau) - į Kvaili.txt.
 
