@@ -53,17 +53,22 @@ Išvedant duomenis studentai rikiuojami alfabetiškai, tik šįkart pagal studen
 Šioje programos realizacijoje pridėta galimybė sugeneruoti penkis skirtingo dyžio failus, kuriuose studentų vardai ir pavardės pateikiami šabloniškai, o namų darbai bei jų kiekis sugeneruojami atsitiktinai. Sugeneruoti duomenų failai atrodo taip:
 
 Vardas      Pavardė      Egzaminas ND1 ND2 ND3 ND4 ... NDn
+
 Vardas1     Pavardė1     5         1   2   3   4       10
+
 Vardas2     Pavardė2     10        2   3   4   5       5
+
 ...
 Studentai, kurių galutinis balas mažesnis nei 5.0, įrašomi į Protingi.txt failą, egzaminą išlaikiusieji (gavę 5.0 ar daugiau) - į Kvaili.txt.
 
 Atlikus spartos analizę, gaunami į apačioje pateiktą pavyzdį panašūs reluztatai:
 
 File10.txt generavimas užtruko 1 ms.
-Studentų skirstymas ir išvedimas užtruko 2 ms.
-File100.txt generavimas užtruko 6 ms.
-Studentų skirstymas ir išvedimas užtruko 7 ms.
-File1000.txt generavimas užtruko 60 ms.
-Studentų skirstymas ir išvedimas užtruko 356 ms.
+
+File10.txt nuskaitymas užtruko 1 ms.
+
+Duomenu isskaidymas i dvi dalisuztruko: 7 ms.
+
+Duomenu isspausdinimas i du failus uztruko: 25 ms.
+
 ...
