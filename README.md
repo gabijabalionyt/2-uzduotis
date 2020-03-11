@@ -64,7 +64,6 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 ...
 
 ## [Versija V0.5]()
-Šioje programos versijoje testuojami trys skirtingi konteineriai: <div class="text-blue mb-2">
- std::vector<Student>, std::deque<Student> bei std::list<Student>,
-</div>
+Šioje programos versijoje testuojami trys skirtingi konteineriai: 
+ **std::vector \<Student>, std::deque\<Student> bei std::list\<Student>,**
  ir kokią įtaką jų pritaikymas daro programos veikimo spartai.
