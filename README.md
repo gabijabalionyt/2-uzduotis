@@ -63,7 +63,26 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 ...
 
-## [Versija V0.5]()
+## [Versija V0.5](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V05)
 Šioje programos versijoje testuojami trys skirtingi konteineriai: 
  **std::vector \<Student>, std::deque\<Student> bei std::list\<Student>,**
  ir kokią įtaką jų pritaikymas daro programos veikimo spartai.
+**Generavimo greitis:**
+|Konteineris| 1000| 10000| 100000| 1000000| 10000000|
+|Std::vector| 19 ms| 244 ms| 2660 ms| 25054 ms| 310421 ms|
+|Std::Deque| 28 ms|261 ms| 3101 ms| 29567 ms| 287850 ms|
+|Std::list| 25 ms| 257 ms | 3383 ms| 32487 ms | 281628 ms|
+
+**Skirstymo ir spausdinimo greitis:**
+|Konteineris| 1000| 10000| 100000| 1000000| 10000000|
+|Std::vector| 165 ms| 13415 ms|  214515 ms| 3985024 ms| 41862459 ms|
+|Std::Deque| 80 ms| 6027 ms| 568355ms| 60781423 ms | 51472143 ms|
+|Std::List| 31 ms | 252 ms| 2909 ms| 29210ms | 274550 ms|
+
+|Std::list|
+
+**Std::vector naudojimo metu CPU buvo naudojamas 40%,o atmintis 67%
+
+**Std::deque naudojimo metu CPU buvo naudojamas 45%, o atmintis 65%
+
+**Std::list naudojimo metu CPU buvo naudojamas 35%, o atmintis 60%
