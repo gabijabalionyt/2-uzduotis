@@ -88,5 +88,5 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 **Std::list naudojimo metu CPU buvo naudojamas 35%, o atmintis 60%**
 
-*(Naudojamas dvieju fiziniu branduoliu procesorius.)
+*(Naudojamas dvieju fiziniu branduoliu procesorius.)*
 
