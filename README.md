@@ -87,3 +87,6 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 **Std::deque naudojimo metu CPU buvo naudojamas 45%, o atmintis 65%**
 
 **Std::list naudojimo metu CPU buvo naudojamas 35%, o atmintis 60%**
+
+*(Naudojamas dvieju fiziniu branduoliu procesorius.)
+
