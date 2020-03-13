@@ -74,12 +74,12 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 |Std::list| 25 ms| 257 ms | 3383 ms| 32487 ms | 281628 ms|
 
 **Skirstymo ir spausdinimo greitis:**
-|Konteineris| 1000| 10000| 100000| 1000000| 10000000|
-|Std::vector| 165 ms| 13415 ms|  214515 ms| 3985024 ms| 41862459 ms|
-|Std::Deque| 80 ms| 6027 ms| 568355ms| 60781423 ms | 51472143 ms|
-|Std::List| 31 ms | 252 ms| 2909 ms| 29210ms | 274550 ms|
+|Konteineris| 1000  |10000    | 100000   |1000000      | 10000000   |
+| --------- |:-----:| :------:|:--------:|:-----------:|-----------:|
+|Std::vector| 165 ms| 13415 ms| 214515 ms| 3985024 ms  | 41862459 ms|
+|Std::Deque | 80 ms | 6027 ms | 568355ms | 60781423 ms | 51472143 ms|
+|Std::List  | 31 ms | 252 ms  | 2909 ms  | 29210ms     | 274550 ms  |
 
-|Std::list|
 
 **Std::vector naudojimo metu CPU buvo naudojamas 40%,o atmintis 67%
 
