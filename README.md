@@ -82,8 +82,8 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 |Std::List  | 31 ms | 252 ms  | 2909 ms  | 29210ms     | 274550 ms  |
 
 
-**Std::vector naudojimo metu CPU buvo naudojamas 40%,o atmintis 67%
+**Std::vector naudojimo metu CPU buvo naudojamas 40%,o atmintis 67%**
 
-**Std::deque naudojimo metu CPU buvo naudojamas 45%, o atmintis 65%
+**Std::deque naudojimo metu CPU buvo naudojamas 45%, o atmintis 65%**
 
-**Std::list naudojimo metu CPU buvo naudojamas 35%, o atmintis 60%
+**Std::list naudojimo metu CPU buvo naudojamas 35%, o atmintis 60%**
