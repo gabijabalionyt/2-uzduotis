@@ -68,10 +68,11 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
  **std::vector \<Student>, std::deque\<Student> bei std::list\<Student>,**
  ir kokią įtaką jų pritaikymas daro programos veikimo spartai.
 **Generavimo greitis:**
-|Konteineris| 1000| 10000| 100000| 1000000| 10000000|
-|Std::vector| 19 ms| 244 ms| 2660 ms| 25054 ms| 310421 ms|
-|Std::Deque| 28 ms|261 ms| 3101 ms| 29567 ms| 287850 ms|
-|Std::list| 25 ms| 257 ms | 3383 ms| 32487 ms | 281628 ms|
+|Konteineris|1000  | 10000  | 100000 | 1000000  | 10000000 |
+| --------- |:----:| :-----:|:------:|:--------:|---------:|
+|Std::vector| 19 ms| 244 ms | 2660 ms| 25054 ms | 310421 ms|
+|Std::Deque | 28 ms| 261 ms | 3101 ms| 29567 ms | 287850 ms|
+|Std::list  | 25 ms| 257 ms | 3383 ms| 32487 ms | 281628 ms|
 
 **Skirstymo ir spausdinimo greitis:**
 |Konteineris| 1000  |10000    | 100000   |1000000      | 10000000   |
