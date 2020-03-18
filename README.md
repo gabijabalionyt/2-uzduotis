@@ -44,7 +44,7 @@ catch (const char *Message)
 Išvedant duomenis studentai rikiuojami alfabetiškai, tik šįkart pagal studentų pavardes.
 
 
-## [Versija V0.4](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.4)
+## [Versija V0.4](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V04)
 
 Šioje programos realizacijoje pridėta galimybė sugeneruoti penkis skirtingo dyžio failus, kuriuose studentų vardai ir pavardės pateikiami šabloniškai, o namų darbai bei jų kiekis sugeneruojami atsitiktinai. 
 
