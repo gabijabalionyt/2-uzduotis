@@ -92,39 +92,23 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 
 ## [Versija V1.0]()
-**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) buvo įvykdytas jau [V0.5](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V05), tad jos spartą galite pažiūrėti šiek tiek aukščiau esančiose lentelėse. 
+**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.0-nebaigta) versijoje, tačiau jo spartos analizės pateikti negaliu, nes mano kompiuteryje buvo per mažai atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
 
-**Antroji strategija** (t.y. studentų perkėlimas tik į vieną naują konteinerį šalinat perkeltuosiuos iš pradinio konteinerio) yra pateikiamas [nebaigtoje V1.0]() versijoje, nes čia dar nėra pridėta jokių naujų algoritmų, kuriuos pridėjau V0.1 versijoj. 
 
-### **Taigi programos sparta naudojant antrąją strategiją, tačiau nenaudojant algoritmų:**
+**Antroji strategija** (t.y. studentų perkėlimas tik į vieną naują konteinerį šalinat perkeltuosiuos iš pradinio konteinerio) buvo įvykdytas jau [V0.5](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V05), tad jos spartą galite pažiūrėti šiek tiek aukščiau esančiose lentelėse. 
 
-**Generavimo greitis:**
-|Konteineris|1000  | 10000  | 100000 | 1000000  | 10000000 |
-| --------- |:----:| :-----:|:------:|:--------:|---------:|
-|Std::vector|  ms| ms |  ms|  ms |  ms|
-|Std::Deque |  ms|  ms |  ms|  ms | ms|
-|Std::list  |  ms|  ms |  ms|  ms |  ms|
+### **Pirmoji strategija yra geresnė laiko atžvilgniu (tą sugebėjau pastebėti iš to, kiek failų sugeneravo prieš užlūžtant kompiuteriui), nes užtruka trumpiau, bet antroji yra žymiai geresnės atminties atžvilgiu. **
 
-**Skirstymo ir spausdinimo greitis:**
-|Konteineris| 1000  |10000    | 100000   |1000000      | 10000000   |
-| --------- |:-----:| :------:|:--------:|:-----------:|-----------:|
-|Std::vector|  ms|  ms|  ms|  ms  |  ms|
-|Std::Deque |ms |  ms | ms |  ms | ms|
-|Std::List  |  ms |  ms  |  ms  | ms     |  ms  |
-### **Pirmoji strategija yra geresnė laiko atžvilgniu, nes užtruka trumpiau, bet antroji yra žymiai geresnės atminties atžvilgiu. **
-
-### **Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus:**
+### **Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus( *std::remove_copy_if, std::remove_if*):**
 
 **Generavimo greitis:**
-|Konteineris|1000  | 10000  | 100000 | 1000000  | 10000000 |
-| --------- |:----:| :-----:|:------:|:--------:|---------:|
-|Std::vector|  ms| ms |  ms|  ms |  ms|
-|Std::Deque |  ms|  ms |  ms|  ms | ms|
-|Std::list  |  ms|  ms |  ms|  ms |  ms|
+|Konteineris| 1000 | 10000 | 100000 | 1000000 |10000000 |
+| --------- |:----:|:-----:|:------:|:------ -:|--------:|
+|Std::vector| 37 ms|354 ms | 4285 ms|52680 ms |590948 ms|
 
 **Skirstymo ir spausdinimo greitis:**
-|Konteineris| 1000  |10000    | 100000   |1000000      | 10000000   |
-| --------- |:-----:| :------:|:--------:|:-----------:|-----------:|
-|Std::vector|  ms|  ms|  ms|  ms  |  ms|
-|Std::Deque |ms |  ms | ms |  ms | ms|
-|Std::List  |  ms |  ms  |  ms  | ms     |  ms  |
+|Konteineris| 1000 |10000  | 100000 |1000000  | 10000000 |
+| --------- |:----:| :----:|:------:|:-------:|---------:|
+|Std::vector|33 ms |286  ms| 3219 ms|43210  ms|492473  ms|
+
+Taigi, algoritmai programos veikimą pagrietino beveik net 90 kartų. 
