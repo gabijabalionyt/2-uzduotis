@@ -97,13 +97,13 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 **Antroji strategija** (t.y. studentų perkėlimas tik į vieną naują konteinerį šalinat perkeltuosiuos iš pradinio konteinerio) buvo įvykdytas jau [V0.5](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V05), tad jos spartą galite pažiūrėti šiek tiek aukščiau esančiose lentelėse. 
 
-### **Pirmoji strategija yra geresnė laiko atžvilgniu (tą sugebėjau pastebėti iš to, kiek failų sugeneravo prieš užlūžtant kompiuteriui), nes užtruka trumpiau, bet antroji yra žymiai geresnės atminties atžvilgiu. **
+ **Pirmoji strategija yra geresnė laiko atžvilgniu (tą sugebėjau pastebėti iš to, kiek failų sugeneravo prieš užlūžtant kompiuteriui), nes užtruka trumpiau, bet antroji yra žymiai geresnės atminties atžvilgiu. **
 
-### **Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus( *std::remove_copy_if, std::remove_if*):**
+**Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus( *std::remove_copy_if, std::remove_if*):**
 
 **Generavimo greitis:**
 |Konteineris| 1000 | 10000 | 100000 | 1000000 |10000000 |
-| --------- |:----:|:-----:|:------:|:------ -:|--------:|
+| --------- |:----:|:-----:|:------:|:-------:|--------:|
 |Std::vector| 37 ms|354 ms | 4285 ms|52680 ms |590948 ms|
 
 **Skirstymo ir spausdinimo greitis:**
