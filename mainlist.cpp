@@ -1,13 +1,13 @@
 #include "biblioteka.h"
 
-int main()
+int mainlist()
 {
     /*atsitiktinių skaičių generavimui*/
     unsigned seed = std::chrono::steady_clock::now().time_since_epoch().count();
     std::default_random_engine eng(seed);
     std::uniform_int_distribution <int> dist (1, 10);
 
-    vector <Student> S;
+    list <Student> S;
     Student StudentObject;
     string Entry;
     int EntryChoice;
@@ -168,8 +168,8 @@ int main()
                     else
                     {auto Start = std::chrono::high_resolution_clock::now();
                     auto StartSorting = std::chrono::high_resolution_clock::now();
-            vector<Student> Failed;
-            vector<Student>::iterator IT = S.begin();
+            list<Student> Failed;
+            list<Student>::iterator IT = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*IT), Average) < 5.0 && FinalMark((*IT), Median) < 5.0)
@@ -179,8 +179,8 @@ int main()
                 else
                     IT++;
             }
-            vector<Student> Passed;
-            vector<Student>::iterator II = S.begin();
+            list<Student> Passed;
+            list<Student>::iterator II = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*II), Average) >= 5.0 && FinalMark((*II), Median) >= 5.0)
@@ -195,7 +195,7 @@ int main()
             std::ofstream WriteToFailed;
             WriteToFailed.open("Failed.txt");
 
-            for (vector<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
+            for (list<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
             {
                 WriteToFailed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToFailed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
@@ -213,7 +213,7 @@ int main()
             std::ofstream WriteToPassed;
             WriteToPassed.open("Passed.txt");
 
-            for (vector<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
+            for (list<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
             {
                 WriteToPassed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToPassed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
@@ -302,8 +302,8 @@ auto Start = std::chrono::high_resolution_clock::now();
                     sort (S.begin(), S.end(), CompareSurnames);
  {auto Start = std::chrono::high_resolution_clock::now();
                     auto StartSorting = std::chrono::high_resolution_clock::now();
-            vector<Student> Failed;
-            vector<Student>::iterator IT = S.begin();
+            list<Student> Failed;
+            list<Student>::iterator IT = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*IT), Average) < 5.0 && FinalMark((*IT), Median) < 5.0)
@@ -313,8 +313,8 @@ auto Start = std::chrono::high_resolution_clock::now();
                 else
                     IT++;
             }
-            vector<Student> Passed;
-            vector<Student>::iterator II = S.begin();
+            list<Student> Passed;
+            list<Student>::iterator II = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*II), Average) >= 5.0 && FinalMark((*II), Median) >= 5.0)
@@ -329,7 +329,7 @@ auto Start = std::chrono::high_resolution_clock::now();
             std::ofstream WriteToFailed;
             WriteToFailed.open("Failed.txt");
 
-            for (vector<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
+            for (list<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
             {
                 WriteToFailed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToFailed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
@@ -346,7 +346,7 @@ auto Start = std::chrono::high_resolution_clock::now();
             std::ofstream WriteToPassed;
             WriteToPassed.open("Passed.txt");
 
-            for (vector<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
+            for (list<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
             {
                 WriteToPassed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToPassed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
@@ -388,8 +388,8 @@ auto Start = std::chrono::high_resolution_clock::now();
     {
         Write << "Vardas" + std::to_string(j) << " Pavarde" + std::to_string(j) << " " << Interval(eng);   //egzamino pažymys įrašomas PRIEŠ namų darbų rezultatus
 
-        vector <int> Results;
-        vector <int>::iterator IT;
+        list <int> Results;
+        list <int>::iterator IT;
 
         for (size_t k = 0; k < AmountOfResults; k++)
             Results.push_back(Interval(eng));
@@ -454,8 +454,8 @@ auto Start = std::chrono::high_resolution_clock::now();
 
              {auto Start = std::chrono::high_resolution_clock::now();
                     auto StartSorting = std::chrono::high_resolution_clock::now();
-            vector<Student> Failed;
-            vector<Student>::iterator IT = S.begin();
+            list<Student> Failed;
+            list<Student>::iterator IT = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*IT), Average) < 5.0 && FinalMark((*IT), Median) < 5.0)
@@ -465,8 +465,8 @@ auto Start = std::chrono::high_resolution_clock::now();
                 else
                     IT++;
             }
-            vector<Student> Passed;
-            vector<Student>::iterator II = S.begin();
+            list<Student> Passed;
+            list<Student>::iterator II = S.begin();
             while (IT != S.end())
             {
                 if (FinalMark((*II), Average) >= 5.0 && FinalMark((*II), Median) >= 5.0)
@@ -481,7 +481,7 @@ auto Start = std::chrono::high_resolution_clock::now();
             std::ofstream WriteToFailed;
             WriteToFailed.open("Failed" + std::to_string(i) + ".txt");
 
-            for (vector<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
+            for (list<Student>::iterator IT = Failed.begin(); IT != Failed.end(); IT++)
             {
                 WriteToFailed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToFailed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
@@ -498,7 +498,7 @@ auto Start = std::chrono::high_resolution_clock::now();
             std::ofstream WriteToPassed;
             WriteToPassed.open("Passed" + std::to_string(i) + ".txt");
 
-            for (vector<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
+            for (list<Student>::iterator IT = Passed.begin(); IT != Passed.end(); IT++)
             {
                 WriteToPassed << (*IT).Name << string(LongestName + 1 - (*IT).Name.size(), ' ');
                 WriteToPassed << (*IT).Surname << string(LongestSurname + 1 - (*IT).Surname.size(), ' ');
