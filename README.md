@@ -15,8 +15,9 @@ Nuo V0.4 yra galimybė generuoti atsitiktinius failus ir yra skaičiuojamas prog
 • *Sukompiliuoti programą, pvz*
 
   *Jei naudojate GCC su GNU Make, įrašykite komandą make*
-  *Jei naudojate GCC be GNU Make, įrašykite:
-  g++ -c main.cpp funkcijos.cpp*
+  *Jei naudojate GCC be GNU Make, įrašykite:*
+  
+  *g++ -c main.cpp funkcijos.cpp*
 
   *g++ -o main main.o funkcijos.o *
 
