@@ -91,7 +91,7 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 *(Naudojamas dvieju fiziniu branduoliu procesorius.)*
 
 
-## [Versija V1.0]()
+## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.1-baigta)
 **Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.0-nebaigta) versijoje, tačiau jo spartos analizės pateikti negaliu, nes mano kompiuteryje buvo per mažai atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
 
 
