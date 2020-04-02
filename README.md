@@ -6,13 +6,21 @@ Nuo V0.2 versijos visi veiksmai yra atliekami tik su vektoriais bei atsiranda ga
 Nuo V0.4 yra galimybė generuoti atsitiktinius failus ir yra skaičiuojamas programos laikas.
 
 ## Įdiegimo ir naudojimosi instrukcija
-• Norinti gauti programą pirmiausia reikia parsisiųsti vieną iš jos versijų iš [Releases](https://github.com/gabijabalionyt/2-uzduotis/releases) 
+• *Norinti gauti programą pirmiausia reikia parsisiųsti vieną iš jos versijų iš [Releases](https://github.com/gabijabalionyt/2-uzduotis/releases) 
 
-• Parsisiųsti ir įsirašyti kokią nors **C++** palaikančią programą (*codeblocks, visual studio ar kita*)
+• *Parsisiųsti ir įsidiegti C++ kompiliatorių (pvz. GCC)
 
-• Atsidaryti programos kodą viena iš parsisiųstų programų ir paleisti kodą.
+• *Atsidaryti terminalą ir jame įvesti programos vietą diske
 
-• Programos naudojimasis bus paprastas, nes visi nurodymai bus parodomi ekrane.
+• *Sukompiliuoti programą, pvz
+
+  *Jei naudojate GCC su GNU Make, įrašykite komandą make
+  *Jei naudojate GCC be GNU Make, įrašykite:
+  g++ -c main.cpp funkcijos.cpp
+
+  *g++ -o main main.o funkcijos.o 
+
+• *Programos naudojimasis bus paprastas, nes visi nurodymai bus parodomi ekrane.
 
 ## Programos realizacija
 ## [Versija V0.1](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0%2C1 )
