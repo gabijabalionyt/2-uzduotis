@@ -19,7 +19,7 @@ Nuo V0.4 yra galimybė generuoti atsitiktinius failus ir yra skaičiuojamas prog
   
   *g++ -c main.cpp funkcijos.cpp*
 
-  *g++ -o main main.o funkcijos.o *
+  *g++ -o main main.o funkcijos.o*
 
 • *Programos naudojimasis bus paprastas, nes visi nurodymai bus parodomi ekrane.*
 
