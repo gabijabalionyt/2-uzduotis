@@ -128,3 +128,8 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 |Std::vector|33 ms |286  ms| 3219 ms|43210  ms|492473  ms|
 
 Taigi, algoritmai programos veikimą pagrietino beveik net 90 kartų. 
+
+Naudojamos įrangos spartai matuoti parametrai
+|                   CPU                 | RAM  |SSD    |
+| ------------------------------------- |:----:| -----:|
+|Intel(R) Core(TM)i3-7020U CPU @ 2.30GHz| 4 GB | 256 GB| 
