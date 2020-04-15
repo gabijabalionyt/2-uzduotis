@@ -117,7 +117,6 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 **Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus( *std::remove_copy_if, std::remove_if*):**
 
-**Generavimo greitis:**
 
 
 **Skirstymo ir spausdinimo greitis naudojant antrą srategiją, lyginant STD::VECTOR veikimą su ir be algoritmų:**
