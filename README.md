@@ -1,5 +1,5 @@
 Sukurta 2020-04-15, kuomet ginantis darbą supratau klaidas (kurios iš esmės buvo analizės trūkumas), tad jas ištaisiau. 
-## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.1-baigta) 
+## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.1) 
 **Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.0.0) versijoje, tačiau jo spartos analizę galiu pateikti ne visą, nes vykdant su daug duomenų, pritrūksta atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
 **Skirstymo ir spausdinimo greitis:**
 
