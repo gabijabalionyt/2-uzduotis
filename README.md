@@ -90,7 +90,6 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 |Std::Deque | 80 ms | 6027 ms | 568355ms | 60781423 ms | 51472143 ms|
 |Std::List  | 31 ms | 252 ms  | 2909 ms  | 29210ms     | 274550 ms  |
 
-
 **Std::vector naudojimo metu CPU buvo naudojamas 40%,o atmintis 67%**
 
 **Std::deque naudojimo metu CPU buvo naudojamas 45%, o atmintis 65%**
@@ -100,8 +99,16 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 *(Naudojamas dvieju fiziniu branduoliu procesorius.)*
 
 
-## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.1-baigta)
-**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.0-nebaigta) versijoje, tačiau jo spartos analizės pateikti negaliu, nes mano kompiuteryje buvo per mažai atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
+## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.1-baigta) 
+**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0]() versijoje, tačiau jo spartos analizę galiu pateikti ne visą, nes vykdant su daug duomenų, pritrūksta atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
+**Skirstymo ir spausdinimo greitis:**
+
+|Konteineris| 1000  |10000    | 100000   |1000000      | 
+| --------- |:-----:| :------:|:--------:| -----------:|
+|Std::vector| 130 ms| 12481 ms| 210124 ms| 2459024 ms  | 
+|Std::Deque | 60 ms | 5842 ms | 412857ms | 52847422 ms | 
+|Std::List  | 24 ms | 221 ms  | 2510 ms  | 22840ms     | 
+
 
 
 **Antroji strategija** (t.y. studentų perkėlimas tik į vieną naują konteinerį šalinat perkeltuosiuos iš pradinio konteinerio) buvo įvykdytas jau [V0.5](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V05), tad jos spartą galite pažiūrėti šiek tiek aukščiau esančiose lentelėse. 
