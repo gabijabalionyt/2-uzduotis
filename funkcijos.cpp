@@ -166,6 +166,15 @@ label:
         cout << "Toks pasirinkimas negalimas, iveskite 1 arba 2 arba 3" << endl;
         goto label;
     }
-    return var;
+    return var;}
+
+bool Fail (const Student & S)
+{
+    return (S.FinalAverage < 5.0 && S.FinalMedian < 5.0);
+}
+//-----------------------------
+bool Pass (const Student & S)
+{
+    return !Fail(S);
 }
 

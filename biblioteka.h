@@ -35,10 +35,13 @@ using std::deque;
 
 struct Student
 {
-    string Name, Surname;
- vector <int> Results;
+    string  Name,
+            Surname;
+    vector <int> Results;
     int     Exam;
-    };
+    double FinalAverage,
+           FinalMedian;
+};
 
 
 const string Error = "Jusu ivesti duomenys neatitinka reikalavimu. Bandykite dar karta.";
@@ -55,3 +58,5 @@ void Conversion (string & Text);
 bool CompareSurnames (const Student& x, const Student& y);
 void NewLine ();
 int pasirinkimas ();
+bool Fail (const Student & S);
+bool Pass (const Student & S);
