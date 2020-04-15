@@ -13,7 +13,8 @@
 #include <random>
 #include <numeric>
 #include <stdexcept>
-
+#include <list>
+#include <deque>
 
 using std::cout;
 using std::cin;
@@ -29,27 +30,28 @@ using std::istream;
 using std::streamsize;
 using std::setprecision;
 using std::max;
+using std::list;
+using std::deque;
+
 struct Student
 {
-    string vardas, pavarde;
-    double gv,gm;   //galutinis pazymys su vidurkiu ir su mediana
-};
+    string Name, Surname;
+ vector <int> Results;
+    int     Exam;
+    };
 
 
 const string Error = "Jusu ivesti duomenys neatitinka reikalavimu. Bandykite dar karta.";
 
-double Vidurkis (vector<int> Grade, int n);
-double Mediana (vector<int> Grade, int n);
-bool AllLetters (string Input)  ;
-bool Digits (const string & str) ;
+//-----------------------------
+double Average (vector<int> Grade);
+double Median (vector<int> Grade);
+double FinalMark (double Exam, double Score);
+double FinalMark (double Exam, vector<int> & Homework);
+double FinalMark (const Student& S, double (*Criteria)(vector<int>) = Average);
+bool AllLetters (string Input);
+bool Digits (const string & str);
 void Conversion (string & Text);
+bool CompareSurnames (const Student& x, const Student& y);
 void NewLine ();
-void Rasymas (int Nr, vector<Student> S, int var);
-void Rikiavimas (vector<Student> S, int Nr);
-void versija1 (vector <Student> &,vector <Student> &silpni, vector <Student> &kieti );
-void versija2 (vector <Student> &,vector <Student> &silpni, vector <Student> &kieti );
-void versija3 (size_t Value);
-void versija3pro (vector <Student> S, vector <Student> silpni, vector <Student> kieti) ;
-void rasymas ( vector<Student> silpni, vector<Student> kieti, int Value );
-
 int pasirinkimas ();
