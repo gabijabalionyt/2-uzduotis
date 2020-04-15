@@ -118,14 +118,13 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 **Programos sparta naudojant antrąją strategiją, ir naudojant algoritmus( *std::remove_copy_if, std::remove_if*):**
 
 **Generavimo greitis:**
-|Konteineris| 1000 | 10000 | 100000 | 1000000 |10000000 |
-| --------- |:----:|:-----:|:------:|:-------:|--------:|
-|Std::vector| 37 ms|354 ms | 4285 ms|52680 ms |590948 ms|
 
-**Skirstymo ir spausdinimo greitis:**
-|Konteineris| 1000 |10000  | 100000 |1000000  | 10000000 |
-| --------- |:----:| :----:|:------:|:-------:|---------:|
-|Std::vector|33 ms |286  ms| 3219 ms|43210  ms|492473  ms|
+
+**Skirstymo ir spausdinimo greitis naudojant antrą srategiją, lyginant STD::VECTOR veikimą su ir be algoritmų:**
+|  Failo dydis  | 1000 |  10000 |  100000 | 1000000  |  10000000 |
+| ------------- |:----:|:------:|:-------:|:--------:|----------:|
+|Su algoritmais:|24 ms | 219  ms| 2508 ms | 24191 ms |492473  ms |
+|Be algoritmų:  |165 ms|13415 ms|214515 ms|3985024 ms|41862459 ms|
 
 Taigi, algoritmai programos veikimą pagrietino beveik net 90 kartų. 
 
