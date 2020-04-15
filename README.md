@@ -100,7 +100,7 @@ Duomenu isspausdinimas i du failus uztruko: 25 ms.
 
 
 ## [Versija V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V0.1-baigta) 
-**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0]() versijoje, tačiau jo spartos analizę galiu pateikti ne visą, nes vykdant su daug duomenų, pritrūksta atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
+**Pirmoji strategija** (t.y. studentų išskaidymas į du tipus, tačiau taip pat jų palikimas pradiniame konteineryje) yra pateikiamas [nebaigtoje V1.0](https://github.com/gabijabalionyt/2-uzduotis/releases/tag/V1.0.0) versijoje, tačiau jo spartos analizę galiu pateikti ne visą, nes vykdant su daug duomenų, pritrūksta atminties vykdyti tokią programą. Tad akivaizdu, jog tai labai neefektyvus būdas. 
 **Skirstymo ir spausdinimo greitis:**
 
 |Konteineris| 1000  |10000    | 100000   |1000000      | 
